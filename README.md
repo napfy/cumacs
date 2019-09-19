@@ -1,6 +1,7 @@
 # cumacs
 A out of box emacs config for Chinese developer.
 一个开箱即用的Emacs配置。
+[查看使用说明](https://github.com/napfy/cumacs/wiki)
 
 ## 前言
 Emacs作为一款知名的“编辑器”，因为它的上手难度太高，并未被许多开发者使用。
