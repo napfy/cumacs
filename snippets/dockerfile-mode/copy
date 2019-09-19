@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: COPY
+# key: co
+# --
+COPY $1 $0

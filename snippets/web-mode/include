@@ -1,0 +1,6 @@
+# contributor : yuef@yahoo.cn
+# name : include
+# key : inc
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+<!--#include file="$1"-->

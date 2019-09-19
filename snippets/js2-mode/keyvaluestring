@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: "key": "value" string
+# key: ks
+# --
+"$1": "$2",
+ks$0

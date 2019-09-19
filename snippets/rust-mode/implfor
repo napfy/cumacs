@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: impl for {...}
+# key: impl
+# --
+impl ${1:$$(capitalize yas-text)} for ${2:$$(capitalize yas-text)} {
+    $0
+}

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: key: value, <-newline
+# key: kn
+# --
+  $1: $2,
+  kn$0

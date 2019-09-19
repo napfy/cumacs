@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ADD
+# key: ad
+# --
+ADD $1 $0

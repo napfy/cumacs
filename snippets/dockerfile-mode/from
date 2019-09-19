@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: FROM
+# key: fr
+# --
+FROM $0

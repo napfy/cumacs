@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: exports.
+# key: exports
+# --
+exports.$1 = $2;
+$0

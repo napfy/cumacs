@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: var -> const
+# key: var
+# --
+const $1 = $2;

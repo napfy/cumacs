@@ -1,0 +1,6 @@
+#contributor : napfy@yahoo.com
+#name : meta refresh
+#key : met
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+<meta http-equiv="refresh" content="$1;url=$2" />$0

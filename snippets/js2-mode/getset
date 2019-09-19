@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: get ... set ...
+# key: gs
+# --
+get${1:$$(capitalize yas-text)}() {
+    return $2;	
+}
+
+set$1($3) {
+    $4 = $3;
+}

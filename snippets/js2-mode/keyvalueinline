@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: key value inline
+# key: ki
+# --
+$1: $2, ki$0

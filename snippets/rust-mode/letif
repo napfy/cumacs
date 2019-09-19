@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: let if {...}
+# key: letif
+# --
+let $1 = if $2 {
+  $0
+} else {
+  
+};

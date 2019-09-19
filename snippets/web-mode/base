@@ -1,0 +1,6 @@
+#contributor:  yue.f@yahoo.cn
+#name: base
+#key: base
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+<base target="_blank"/>

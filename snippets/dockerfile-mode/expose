@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: EXPOSE
+# key: ex
+# --
+EXPOSE $0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: CMD
+# key: cm
+# --
+CMD [ "$0" ]

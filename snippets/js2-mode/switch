@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: switch ... case ...
+# key: switch
+# --
+switch ($1) {
+  case$0
+}

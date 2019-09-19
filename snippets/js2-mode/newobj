@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: const new Object
+# key: no
+# --
+const $1 = new ${Object}();
