@@ -6,4 +6,3 @@
 
 (set-face-font 'default (font-spec :family "Inconsolata" :size 16))
 (set-fontset-font t 'han (font-spec :family "Noto Sans CJK SC Regular" :size 16))
-
