@@ -3,5 +3,9 @@
 
 (cumacs-require-package 'yaml-mode)
 (global-set-key (kbd "C-;") 'comment-line)
+
+(setq org-default-notes-file (concat cumacs-dir "/notes.org"))
+(global-set-key (kbd "C-c C-t") 'org-capture)
+
 (provide 'cumacs-editor)
 ;;; cumacs-editor.el ends here

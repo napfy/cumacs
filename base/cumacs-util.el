@@ -33,7 +33,6 @@
 (helm-mode)
 (global-set-key (kbd "C-c i") 'helm-imenu)
 (global-set-key (kbd "C-x b") 'helm-multi-files)
-(global-set-key (kbd "C-c r") 'helm-do-grep)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-r") 'helm-recentf)
@@ -42,11 +41,9 @@
 (require 'helm-command)
 (setq helm-input-idle-delay 0.1)
 
-
+(cumacs-require-package 'helm-tramp)
 (cumacs-require-package 'helm-swoop)
 
-;; Change the keybinds to whatever you like :)
-(global-set-key (kbd "C-c s") 'helm-multi-swoop-projectile)
 (define-key helm-multi-swoop-map (kbd "C-r") 'helm-previous-line)
 (define-key helm-multi-swoop-map (kbd "C-s") 'helm-next-line)
 
@@ -107,14 +104,13 @@
 (projectile-global-mode)
 (setq projectile-enable-caching t)
 (setq projectile-indexing-method 'native)
-;(global-set-key (kbd "C-c C-f") 'projectile-find-file)
 
 (cumacs-require-package 'helm-projectile)
 (global-set-key (kbd "C-c g") 'helm-projectile-grep)
 (global-set-key (kbd "C-c f") 'helm-projectile-find-file-dwim)
-(global-set-key (kbd "C-c r") nil)
+
 (cumacs-require-package 'multiple-cursors)
-(global-set-key (kbd "C-c C-a") 'mc/edit-lines)
+(global-set-key (kbd "C-M->") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-M-<") 'mc/mark-all-like-this)
@@ -123,7 +119,7 @@
 (cumacs-require-package 'pretty-mode)
 
 (cumacs-require-package 'expand-region)
-(global-set-key (kbd "C-c e") 'er/expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
 
 
 (cumacs-require-package 'ace-window)
@@ -134,10 +130,6 @@
 
 (cumacs-require-package 'imenu-list)
 (global-set-key (kbd "<f9>") 'imenu-list-smart-toggle)
-
-
-(setq org-default-notes-file (concat cumacs-dir "/notes.org"))
-(global-set-key (kbd "C-c C-t") 'org-capture)
 
 (cumacs-require-package 'rg)
 (rg-enable-default-bindings)
@@ -162,49 +154,6 @@
       '((internal-border-width . 10)
         (background-color . "gray10")))
 
-
-(cumacs-require-package 'pretty-hydra)
-(cumacs-require-package 'major-mode-hydra)
-(global-set-key (kbd "<f2>") #'major-mode-hydra)
-
-
-(pretty-hydra-define cumacs-shortcut
-  (:quit-key "q" :color pink)
-  ("浏览"
-   (("l" helm-buffers-list "Buffer列表")
-    ("p" previous-buffer "上一Buffer")
-    ("n" next-buffer "下一Buffer"))
-   "搜索"
-   (("r" rg-project "指定类型正则查找")
-    ("s" project-find-regexp "指定目录正则查找")
-    ("m" helm-multi-swoop-projectile "多文件的查找替换"))
-   
-   "      窗口切换"
-   (("j" eyebrowse-next-window-config "下一状态")
-    ("k" eyebrowse-prev-window-config "上一状态")
-    ("t" eyebrowse-switch-to-window-config "指定配置"))
-   "     窗口状态"
-   (("w" eyebrowse-create-window-config "保存状态")
-    ("d" eyebrowse-close-window-config "移除状态")
-    ("x" delete-window "关闭窗口"))
-   "    窗口大小"
-   ((">" enlarge-window-horizontally "横向扩展")
-    ("<" shrink-window-horizontally "横向缩小")
-    ("h" split-window-horizontally "横向分隔"))
-   "    代码折叠"
-   (("," hs-hide-all "折叠全部")
-    ("." hs-show-all "展开全部")
-    ("/" hs-toggle-hiding "折叠当前"))
-   "    开发工具"
-   (("c" eshell "命令行")
-    ("e" restclient-mode "Rest客户端")
-    ("g" magit-status "Git客户端"))
-   "   实用功能"
-   (("b" browse-web "浏览网址")
-    ("o" org-capture "备忘录"))
-   ))
-
-(global-set-key (kbd "<C-escape>") 'cumacs-shortcut/body)
 
 (cumacs-require-package 'ivy-posframe)
 

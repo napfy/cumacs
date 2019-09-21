@@ -5,7 +5,6 @@
 (cumacs-require-package 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
-
 (cumacs-require-package 'restclient)
 
 (cumacs-require-package 'dumb-jump)
