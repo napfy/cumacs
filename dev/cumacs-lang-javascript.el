@@ -36,7 +36,7 @@
 
 (add-hook 'json-mode-hook 'cumacs-json-hook)
 
-(major-mode-hydra-define js2-mode (:quit-key "q" :color pink)
+(major-mode-hydra-define js2-mode (:quit-key "q" :color pink :exit t)
   ("   Nodejs   "
    (("r" npm-mode-npm-run "运行")
     ("n" npm-mode-npm-init "新建")
