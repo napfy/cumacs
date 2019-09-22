@@ -35,8 +35,5 @@
    (("u" (markdown-promote) "升一级")
     ("d" (markdown-demote) "降一级"))))
 
-
-
-
 (provide 'cumacs-editor)
 ;;; cumacs-editor.el ends here

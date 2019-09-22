@@ -124,4 +124,26 @@
 (add-hook 'css-mode-hook 'cumacs-css-hook)
 (add-hook 'scss-mode-hook 'cumacs-scss-hook)
 
+
+(major-mode-hydra-define web-mode (:quit-key "q" :color pink )
+  ("选择"
+   (("s" (web-mode-attribute-select) "属性" :exit t)
+    ("c" (web-mode-element-content-select) "内容" :exit t)
+    ("a" (web-mode-element-select) "整个节点" :exit t))
+   "属性编辑"
+   (("i" (web-mode-attribute-insert) "插入属性" :exit t)
+    ("d" (web-mode-attribute-kill) "删除属性"))
+   "折叠/展开"
+   (("f" (web-mode-fold-or-unfold) "本层级")
+    ("F" (web-mode-element-children-fold-or-unfold) "自层级"))
+   "属性定位"
+   (("." (web-mode-attribute-next) "下一个")
+    ("," (web-mode-attribute-previous) "上一个"))
+   "层级定位"
+   (("j" (web-mode-element-child) "下级节点")
+    ("u" (web-mode-element-parent) "上级节点"))
+   "节点定位"
+   (("n" (web-mode-element-next) "下个节点")
+    ("p" (web-mode-element-previous) "上个节点"))))
+
 (provide 'cumacs-web-mode)
