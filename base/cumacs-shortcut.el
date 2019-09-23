@@ -41,6 +41,6 @@
     ("o" org-capture "备忘录"  :exit t))
    ))
 
-(global-set-key (kbd "<C-escape>") 'cumacs-shortcut/body)
+(global-set-key (kbd "M-`") 'cumacs-shortcut/body)
 
 (provide 'cumacs-shortcut)

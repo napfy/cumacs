@@ -3,6 +3,7 @@
 (prefer-coding-system 'utf-8-unix)
 (set-terminal-coding-system 'utf-8-unix)
 (set-keyboard-coding-system 'utf-8-unix)
+;;for win10
+;;(set-fontset-font t 'han (font-spec :family "Microsoft Yahei UI" :size 16))
 
-(set-face-font 'default (font-spec :family "Inconsolata" :size 16))
-(set-fontset-font t 'han (font-spec :family "Noto Sans CJK SC Regular" :size 16))
+

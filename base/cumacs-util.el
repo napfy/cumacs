@@ -151,7 +151,7 @@
 (setq helm-posframe-poshandler 'posframe-poshandler-frame-center)
 
 (setq helm-posframe-parameters
-      '((internal-border-width . 10)
+      '((internal-border-width . 0)
         (background-color . "gray10")))
 
 

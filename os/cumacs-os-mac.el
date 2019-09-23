@@ -8,6 +8,3 @@
 ;;使用win外接键盘时设置
 (setq mac-command-modifier 'super)
 (setq mac-option-modifier 'meta)
-
-(set-face-font 'default (font-spec :family "Inconsolata" :size 18))
-(set-fontset-font t 'han (font-spec :family "WenQuanYi Micro Hei" :size 18))
