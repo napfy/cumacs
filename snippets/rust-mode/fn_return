@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: fn -> ret val
-# key: fn
+# name: fn () -> { ... }
+# key: fnr
 # --
-fn $1 ($2) -> $3 {
+fn $1($2) -> $3 {
    $0
 }
