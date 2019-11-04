@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: const class & constructor
-# key: class
+# key: conclassc
 # --
 const ${1:$$(capitalize yas-text)} = class ${2:$$(capitalize yas-text)} {
   constructor($3) {

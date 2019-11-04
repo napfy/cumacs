@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: const function
-# key: func
+# key: confunc
 # --
 const $1 = function ($2) {
   $0
