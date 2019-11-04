@@ -8,7 +8,6 @@
 
 
 (defun cumacs-web-hook ()
-  (message "cumacs web hook")
   (define-key web-mode-map (kbd "M-n") 'emmet-next-edit-point)
   (define-key web-mode-map (kbd "M-p") 'emmet-prev-edit-point)
   (define-key web-mode-map (kbd "C-;") 'web-mode-comment-or-uncomment)
@@ -25,7 +24,6 @@
 
 (defun cumacs/web-html-setup()
   "Setup for web-mode html files."
-  (message "web html setup")
   (flycheck-add-mode 'html-tidy 'web-mode)
   (flycheck-select-checker 'html-tidy)
   (set (make-local-variable 'company-backends)
@@ -37,7 +35,6 @@
 ;;
 (defun cumacs/web-jsx-setup()
   "Setup for js related."
-  (message "web jsx setup")
   (setup-tide-mode)
   (prettier-js-mode)
   (flycheck-add-mode 'javascript-eslint 'web-mode)
@@ -124,6 +121,8 @@
 (add-hook 'css-mode-hook 'cumacs-css-hook)
 (add-hook 'scss-mode-hook 'cumacs-scss-hook)
 
+(eval-after-load 'web-mode
+	   '(add-hook 'web-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
 
 (major-mode-hydra-define web-mode (:quit-key "q" :color pink )
   ("选择"

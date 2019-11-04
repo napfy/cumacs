@@ -2,4 +2,4 @@
 # name: let mut ...
 # key: lm
 # --
-let mut $1 = $2;
+let mut $1 = $0;

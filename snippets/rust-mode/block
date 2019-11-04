@@ -1,5 +1,7 @@
 # -*- mode: snippet -*-
 # name: { ... }
-# key: cb
+# key: bb
 # --
-{ $0 }
+{
+    $0
+}

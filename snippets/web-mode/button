@@ -1,6 +1,0 @@
-#contributor:  yue.f@yahoo.cn
-#name:button (name value)
-#key:button
-# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
-# --
-<input type="button" name="$1" value="$2"/>

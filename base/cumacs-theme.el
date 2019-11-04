@@ -1,5 +1,6 @@
 (global-hl-line-mode t)
-;;(set-face-font 'default (font-spec :family "FiraCode-Retina" :size 16))
+
+;;(set-face-font 'default (font-spec :family "Fira Code" :size 16))
 ;;(set-fontset-font t 'han (font-spec :family "SourceHanSerifSC-Regular" :size 16))
 
 (defalias 'set-face 'set-face-attribute)

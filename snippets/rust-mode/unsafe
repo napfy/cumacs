@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: unsafe {...}
-# key: unsafe
+# key: unsa
 # --
 unsafe {
   $0

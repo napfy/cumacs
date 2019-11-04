@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: #![crate_type =  ... ]
+# key: cratet
+# --
+#![crate_type = "$0"]

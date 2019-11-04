@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: match { ... }
+# key: letm
+# --
+let $1 = match $2 {
+    $0
+};

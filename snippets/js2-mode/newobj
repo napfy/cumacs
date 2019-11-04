@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: const new Object
-# key: no
+# name: const ... new ...
+# key: newobj
 # --
-const $1 = new ${Object}();
+const $1 = new ${2:$$(capitalize yas-text)}($0)

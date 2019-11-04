@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: #[link_name = ... ]
+# key: linkn
+# --
+#[link_name = "$0"]

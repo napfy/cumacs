@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: extern { ... }
+# key: extb
+# --
+extern {
+    $0
+}

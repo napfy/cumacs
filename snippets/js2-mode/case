@@ -2,8 +2,6 @@
 # name: case ...
 # key: case
 # --
-case $1: {
-     $2;
-     break;
-}
-$0
+  case $1:
+    $0
+    break

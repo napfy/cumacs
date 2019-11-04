@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: #[feature ... ]
+# key: feat
+# --
+#[feature($0)]

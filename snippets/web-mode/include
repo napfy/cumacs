@@ -3,4 +3,4 @@
 # key : inc
 # expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
 # --
-<!--#include file="$1"-->
+<!--#include file="$0"-->

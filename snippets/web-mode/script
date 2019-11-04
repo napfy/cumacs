@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name : script src=...
+# key : script
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))  
+# -- 
+<script src="$0"></script>

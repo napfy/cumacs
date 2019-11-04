@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
 # name: const
-# key: const
+# key: con
 # --
-const $1 = $2;
+const $1 = $0

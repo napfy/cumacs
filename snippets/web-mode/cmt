@@ -1,6 +1,6 @@
-# contributor : yuef@yahoo.cn
+# -*- mode: snippet -*-
 # name : <!-- -->
 # key : cmt
-# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
-# --
-<!-- $1 -->$0
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))  
+# -- 
+<!-- $0 -->

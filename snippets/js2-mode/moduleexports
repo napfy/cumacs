@@ -2,5 +2,5 @@
 # name: module.exports
 # key: me
 # --
-module.exports = $1;
+module.exports = $1
 $0

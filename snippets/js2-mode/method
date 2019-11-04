@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: object method 
+# key: mm
+# --
+$1 ($2) {
+  $0
+}

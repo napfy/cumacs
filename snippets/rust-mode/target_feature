@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: #[target_feature ... ]
+# key: targ
+# --
+#[target_feature($0)]

@@ -1,6 +1,0 @@
-# contributor :  yue.f@yahoo.cn
-# name : doctype [UpperCase]
-# key : doctype
-# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
-# --
-<!DOCTYPE HTML>

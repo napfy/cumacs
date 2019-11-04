@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: for in
+# name: for in ...
 # key: forin
 # --
-for ( let ${i:item} in $2 ) {
-    $0
+for ( const $1 in $2 ) {
+  $0
 }

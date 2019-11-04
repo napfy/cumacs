@@ -2,5 +2,5 @@
 # name: const ... require()
 # key: require
 # --
-const $1 = require("$2");
+const $1 = require("$2")
 $0
