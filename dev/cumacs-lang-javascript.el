@@ -33,8 +33,7 @@
 (defun cumacs-json-hook ()
   (flycheck-mode t)
   (hs-minor-mode t)
-  (yas-minor-mode t)
-  (smartparens-mode t))
+  (yas-minor-mode t))
 
 (add-hook 'json-mode-hook 'cumacs-json-hook)
 
