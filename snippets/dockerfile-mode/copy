@@ -1,5 +1,6 @@
 # -*- mode: snippet -*-
 # name: COPY
 # key: co
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))    
 # --
 COPY $1 $0

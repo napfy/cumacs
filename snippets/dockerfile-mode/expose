@@ -1,5 +1,6 @@
 # -*- mode: snippet -*-
 # name: EXPOSE
 # key: ex
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))      
 # --
 EXPOSE $0

@@ -1,5 +1,6 @@
 # -*- mode: snippet -*-
 # name: ENTRYPOINT
 # key: ent
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))      
 # --
 ENTRYPOINT [ "$0" ]
