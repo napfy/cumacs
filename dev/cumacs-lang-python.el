@@ -73,7 +73,9 @@
    " 测试 "
    (("t" (elpy-test) "测试"))
    " 调试 "
-   (("d" (elpy-pdb-debug-buffer) "调试"))  
+   (("d" (elpy-pdb-debug-buffer) "调试"))
+   " 设置 "
+   (("c" (elpy-config) "检查配置"))
    ))
 
 (provide 'cumacs-lang-python)
