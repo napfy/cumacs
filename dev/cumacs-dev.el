@@ -13,6 +13,7 @@
 (require 'cumacs-lang-javascript)
 (require 'cumacs-lang-typescript)
 (require 'cumacs-lang-elisp)
+(require 'cumacs-lang-python)
 
 (require 'cumacs-lang-rust)
 (require 'cumacs-web-mode)
