@@ -52,7 +52,7 @@
 ;run M-x (all-the-icons-install-fonts)
 
 (cumacs-require-package 'telephone-line)
-(telephone-line-mode 1)
+
 (setq telephone-line-primary-left-separator 'telephone-line-cubed-left
       telephone-line-secondary-left-separator 'telephone-line-cubed-hollow-left
       telephone-line-primary-right-separator 'telephone-line-cubed-right
@@ -60,6 +60,7 @@
 (setq telephone-line-height 24
       telephone-line-evil-use-short-tag t)
 
+(telephone-line-mode 1)
 
 
 (cumacs-require-package 'centaur-tabs)
