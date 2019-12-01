@@ -7,7 +7,9 @@
   ("浏览"
    (("l" helm-buffers-list "Buffer列表" :exit t)
     ("p" previous-buffer "上一Buffer"  )
-    ("n" next-buffer "下一Buffer" ))
+    ("n" next-buffer "下一Buffer" )
+    ("<left>" (centaur-tabs-backward) "上一标签")
+    ("<right>" (centaur-tabs-forward) "下一标签"))
    "搜索"
    (("r" rg-project "指定类型正则查找"  :exit t)
     ("f" project-find-regexp "指定目录正则查找"  :exit t)
@@ -42,5 +44,6 @@
    ))
 
 (global-set-key (kbd "M-`") 'cumacs-shortcut/body)
+(global-set-key (kbd "<f7>") 'cumacs-shortcut/body)
 
 (provide 'cumacs-shortcut)

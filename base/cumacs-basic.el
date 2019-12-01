@@ -51,6 +51,29 @@
 (setq doom-modeline-env-load-string "...")
 ;run M-x (all-the-icons-install-fonts)
 
+(cumacs-require-package 'telephone-line)
+(telephone-line-mode 1)
+(setq telephone-line-primary-left-separator 'telephone-line-cubed-left
+      telephone-line-secondary-left-separator 'telephone-line-cubed-hollow-left
+      telephone-line-primary-right-separator 'telephone-line-cubed-right
+      telephone-line-secondary-right-separator 'telephone-line-cubed-hollow-right)
+(setq telephone-line-height 24
+      telephone-line-evil-use-short-tag t)
+
+
+
+(cumacs-require-package 'centaur-tabs)
+(centaur-tabs-mode t)
+(centaur-tabs-headline-match)
+(setq centaur-tabs-set-icons t)
+(setq centaur-tabs-gray-out-icons 'buffer)
+(setq centaur-tabs-set-bar 'under)
+(setq x-underline-at-descent-line t)
+(setq centaur-tabs-set-close-button nil)
+(setq centaur-tabs-style "bar")
+(setq centaur-tabs-set-modified-marker t)
+(setq centaur-tabs-modified-marker "*")
+
 (setq-default frame-title-format
       '(" CUMACS - " (:eval (if (buffer-file-name)
                                                     (abbreviate-file-name (buffer-file-name))

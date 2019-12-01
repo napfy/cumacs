@@ -1,6 +1,7 @@
 (require 'cumacs-yasnippet)
 (require 'cumacs-company)
 
+
 (global-font-lock-mode t)
 (cumacs-require-package 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
@@ -14,6 +15,7 @@
 (require 'cumacs-lang-typescript)
 (require 'cumacs-lang-elisp)
 (require 'cumacs-lang-python)
+(require 'cumacs-lang-go)
 
 (require 'cumacs-lang-rust)
 (require 'cumacs-web-mode)

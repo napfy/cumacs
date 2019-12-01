@@ -2,4 +2,4 @@
 # name: import ? from ...
 # key: imp
 # --
-import $1 from '$0'
+import $2 from '$1'$0

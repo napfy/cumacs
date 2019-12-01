@@ -1,5 +1,5 @@
 (cumacs-require-package 'yasnippet)
-
+(cumacs-require-package 'yasnippet-snippets)
 (setq yas-prompt-functions '(yas-completing-prompt))
 (add-to-list 'yas-snippet-dirs (concat cumacs-dir "snippets"))
 (setq yas-also-indent-empty-lines t)
