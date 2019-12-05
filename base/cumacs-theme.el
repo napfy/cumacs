@@ -118,6 +118,13 @@
 
 (set-face 'hl-line nil  :inherit nil :box '(:line-width 3 :color "DarkSlateGray4" :style released-button))
 
+(set-face 'markdown-header-face-1 nil :foreground "red3" :height 1.0)
+(set-face 'markdown-header-face-2 nil :foreground "orange2" :height 1.0)
+(set-face 'markdown-header-face-3 nil :foreground "gold" :height 1.0)
+(set-face 'markdown-header-face-4 nil :foreground "SpringGreen" :height 1.0)
+(set-face 'markdown-header-face-5 nil :foreground "LightSkyBlue" :height 1.0)
+(set-face 'markdown-header-face-6 nil :foreground "HotPink" :height 1.0)
+
 
 (provide 'cumacs-theme)
 
