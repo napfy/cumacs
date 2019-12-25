@@ -32,9 +32,20 @@
   (setq company-tooltip-align-annotations t)
   (hs-minor-mode t)
   (yas-minor-mode t)
-  (define-key rust-mode-map (kbd "<f5>") 'cargo-process-run)
-  (define-key rust-mode-map (kbd "<f6>") 'cargo-process-build)
-  (define-key rust-mode-map (kbd "<f1>") 'racer-describe-tooltip))
+  (define-key rust-mode-map (kbd "<f5>") 'cargo-process-build)
+  (define-key rust-mode-map (kbd "<f6>") 'cargo-process-run)
+  (define-key rust-mode-map (kbd "<f1>") 'racer-describe-tooltip)
+  (define-key rust-mode-map (kbd "<M-f5>") 'cumacs-rustc)
+  (define-key rust-mode-map (kbd "<M-f6>") 'cumacs-rust-run))
+
+
+(defun cumacs-rustc ()
+  (interactive)
+  (compile (concat "rustc " (buffer-name))))
+
+(defun cumacs-rust-run ()
+  (interactive)
+  (compile (concat "./" (file-name-sans-extension (buffer-name)))))
 
 (setq rust-format-on-save t)
 

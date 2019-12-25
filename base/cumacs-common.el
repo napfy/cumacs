@@ -21,13 +21,14 @@
 (defun cumacs-newline ()
   (interactive)
   (progn
-    (end-of-line)
+    (newline)    
     (newline)
+    (indent-for-tab-command)
+    (previous-line)
     (indent-for-tab-command)))
 
 (defun cumacs-newline-no-indent ()
   (interactive)
-  (end-of-line)
   (newline)
   (beginning-of-line))
 
