@@ -18,29 +18,28 @@
   (interactive)
   (compile (concat "go run " (buffer-file-name))))
 
+(defun lsp-go-install-save-hooks ()
+  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+  (add-hook 'before-save-hook #'lsp-organize-imports t t))
+
 (defun cumacs-golang-hook ()
   (company-mode t)
   (define-key go-mode-map (kbd "<f5>") 'cumacs-golang-build)
   (define-key go-mode-map (kbd "<f6>") 'cumacs-golang-run)
-  (define-key go-mode-map (kbd "M-.") 'godef-jump)
+  (define-key go-mode-map (kbd "C-c .") 'lsp-find-implementation)
+  (define-key go-mode-map (kbd "M-.") 'lsp-find-definition)
   (yas-minor-mode-on)
   (hs-minor-mode t)
-  (lsp-deferred))
+  (lsp-deferred)
+  (lsp-go-install-save-hooks))
 
 (defun cumacs-golang-get ()
   (interactive)
   (let ((pkg (read-string "package url: ")))
     (shell-command (concat  "GOPROXY=https://goproxy.io GO111MODULE=on go get -u " pkg))))
 
-(defun lsp-go-install-save-hooks ()
-  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-  (add-hook 'before-save-hook #'lsp-organize-imports t t))
-(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
-
-
-(add-hook 'before-save-hook 'gofmt-before-save)
 (add-hook 'go-mode-hook 'cumacs-golang-hook)
-(add-hook 'go-mode-hook 'lsp-deferred)
+
 
 (lsp-register-custom-settings
  '(("gopls.completeUnimported" t t)
