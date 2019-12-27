@@ -18,6 +18,10 @@
   (interactive)
   (compile (concat "go run " (buffer-file-name))))
 
+(defun cumacs-golang-test ()
+  (interactive)
+  (compile (concat "go test -v " (buffer-name))))
+
 (defun lsp-go-install-save-hooks ()
   (add-hook 'before-save-hook #'lsp-format-buffer t t)
   (add-hook 'before-save-hook #'lsp-organize-imports t t))
@@ -26,6 +30,7 @@
   (company-mode t)
   (define-key go-mode-map (kbd "<f5>") 'cumacs-golang-build)
   (define-key go-mode-map (kbd "<f6>") 'cumacs-golang-run)
+  (define-key go-mode-map (kbd "C-c t") 'cumacs-golang-test)  
   (define-key go-mode-map (kbd "C-c .") 'lsp-find-implementation)
   (define-key go-mode-map (kbd "M-.") 'lsp-find-definition)
   (yas-minor-mode-on)
