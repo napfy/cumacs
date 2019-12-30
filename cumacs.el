@@ -1,6 +1,6 @@
 (setq package-enable-at-startup nil)
 (defvar package-pinned-packages nil)
-(defvar package-archives
+(setq package-archives
   ;; '(("gnu" . "https://elpa.gnu.org/packages/")
   ;; 	("melpa" . "https://melpa.org/packages/"))
   '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
