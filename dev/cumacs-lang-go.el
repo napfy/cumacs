@@ -14,6 +14,18 @@
   (interactive)
   (compile (concat "go build -o "  (go-guess-gopath) "bin/" (file-name-sans-extension (buffer-name)) " -v " (buffer-file-name))))
 
+(defun cumacs-golang-linux-build ()
+  (interactive)
+  (compile (concat "GOOS=linux GOARCH=amd64 go build -o "  (go-guess-gopath) "bin/" (file-name-sans-extension (buffer-name)) " -v " (buffer-file-name))))
+
+(defun cumacs-golang-docker-build ()
+  (interactive)
+  (compile (concat "CGO_ENABLED=0 GOOS=linux  GOARCH=amd64 go build -a -installsuffix cgo -o "  (go-guess-gopath) "bin/" (file-name-sans-extension (buffer-name)) " -v " (buffer-file-name))))
+
+(defun cumacs-golang-win-build ()
+  (interactive)
+  (compile (concat "GOOS=windows GOARCH=amd64 go build -o "  (go-guess-gopath) "bin/" (file-name-sans-extension (buffer-name)) " -v " (buffer-file-name) ".exe")))
+
 (defun cumacs-golang-run ()
   (interactive)
   (compile (concat "go run " (buffer-file-name))))
@@ -29,6 +41,7 @@
 (defun cumacs-golang-hook ()
   (company-mode t)
   (define-key go-mode-map (kbd "<f5>") 'cumacs-golang-build)
+  (define-key go-mode-map (kbd "S-<f5>") 'cumacs-golang-docker-build)
   (define-key go-mode-map (kbd "<f6>") 'cumacs-golang-run)
   (define-key go-mode-map (kbd "C-c t") 'cumacs-golang-test)  
   (define-key go-mode-map (kbd "C-c .") 'lsp-find-implementation)
