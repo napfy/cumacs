@@ -1,16 +1,13 @@
 (cumacs-use-package 'rust-mode)
-
 (cumacs-require-package 'cargo)
-(cumacs-require-package 'racer)
 (cumacs-require-package 'flycheck-rust)
+(require 'company-lsp)
 
 (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
 (setq flycheck-check-syntax-automatically '(mode-enabled save))
 
-(add-hook 'racer-mode-hook 'eldoc-mode)
-(add-hook 'racer-mode-hook 'company-mode)
-(add-hook 'rust-mode-hook 'racer-mode)
-
+(add-hook 'cumacs-rust-mode-hook 'eldoc-mode)
+(add-hook 'cumacs-rust-mode-hook 'company-mode)
 
 (defun cumacs-cargo-search ()
   (interactive)
@@ -30,14 +27,26 @@
 
 (defun cumacs-rust-hook()
   (setq company-tooltip-align-annotations t)
-  (define-key rust-mode-map (kbd "<f5>") 'cargo-process-run)
-  (define-key rust-mode-map (kbd "<f6>") 'cargo-process-build)
-  (define-key rust-mode-map (kbd "<f1>") 'racer-describe-tooltip))
+  (hs-minor-mode t)
+  (yas-minor-mode t)
+  (lsp 1)
+  (define-key rust-mode-map (kbd "<f5>") 'cargo-process-build)
+  (define-key rust-mode-map (kbd "<f6>") 'cargo-process-run)
+  (define-key rust-mode-map (kbd "<M-f5>") 'cumacs-rustc)
+  (define-key rust-mode-map (kbd "<M-f6>") 'cumacs-rust-run))
+
+
+(defun cumacs-rustc ()
+  (interactive)
+  (compile (concat "rustc " (buffer-name))))
+
+(defun cumacs-rust-run ()
+  (interactive)
+  (compile (concat "./" (file-name-sans-extension (buffer-name)))))
 
 (setq rust-format-on-save t)
 
 (add-hook 'rust-mode-hook 'cumacs-rust-hook)
-
 
 (provide 'cumacs-lang-rust)
 

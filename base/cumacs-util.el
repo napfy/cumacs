@@ -13,6 +13,7 @@
 
 (cumacs-require-package 'smartparens)
 (require 'smartparens-config)
+(smartparens-global-mode t)
 
 (cumacs-require-package 'which-key)
 (which-key-mode)

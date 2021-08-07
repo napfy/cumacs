@@ -1,10 +1,10 @@
 (setq package-enable-at-startup nil)
 (defvar package-pinned-packages nil)
-(defvar package-archives
-  ;; '(("gnu" . "https://elpa.gnu.org/packages/")
-  ;; 	("melpa" . "https://melpa.org/packages/"))
-  '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-    ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+(setq package-archives
+      ;; '(("gnu" . "https://elpa.gnu.org/packages/")
+  	  ;;   ("melpa" . "https://melpa.org/packages/"))
+      '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+        ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 
 (defvar cumacs-dir (file-name-directory load-file-name))
 (defvar package-user-dir (expand-file-name "repo" (file-name-directory (directory-file-name cumacs-dir))))

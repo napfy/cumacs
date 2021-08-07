@@ -1,6 +1,8 @@
 (global-hl-line-mode t)
+
 ;;(set-face-font 'default (font-spec :family "FiraCode-Retina" :size 16))
-;;(set-fontset-font t 'han (font-spec :family "SourceHanSerifSC-Regular" :size 16))
+(set-face-font 'default (font-spec :family "JetBrains Mono" :size 16))
+(set-fontset-font t 'han (font-spec :family "SourceHanSerifSC" :size 16))
 
 (defalias 'set-face 'set-face-attribute)
 (set-cursor-color "azure1")
@@ -116,6 +118,13 @@
 (set-face 'rainbow-delimiters-unmatched-face nil :foreground "#A9A9A9")
 
 (set-face 'hl-line nil  :inherit nil :box '(:line-width 3 :color "DarkSlateGray4" :style released-button))
+
+(set-face 'markdown-header-face-1 nil :foreground "red3" :height 1.0)
+(set-face 'markdown-header-face-2 nil :foreground "orange2" :height 1.0)
+(set-face 'markdown-header-face-3 nil :foreground "gold" :height 1.0)
+(set-face 'markdown-header-face-4 nil :foreground "SpringGreen" :height 1.0)
+(set-face 'markdown-header-face-5 nil :foreground "LightSkyBlue" :height 1.0)
+(set-face 'markdown-header-face-6 nil :foreground "HotPink" :height 1.0)
 
 
 (provide 'cumacs-theme)

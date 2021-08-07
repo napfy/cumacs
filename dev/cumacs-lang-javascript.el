@@ -1,6 +1,7 @@
 (cumacs-require-package 'js2-mode)
-(cumacs-use-package 'prettier-js)
+;(cumacs-require-package 'prettier-js)
 (cumacs-require-package 'js2-refactor)
+(cumacs-require-package 'eslint-fix)
 
 (add-to-list 'auto-mode-alist '("\\.js" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json" . javascript-mode))
@@ -12,9 +13,10 @@
 
 (setq js-indent-level 2)
 ;(setq js2-global-externs '('("module" "require" "assert" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON")))
-(setq prettier-js-args '("--trailing-comma" "all"
-			 "--bracket-spacing" "false"))
+;; (setq prettier-js-args '("--trailing-comma" "all"
+;; 			 "--bracket-spacing" "true" "--single-quote" "true"))
 
+(setq js2-strict-missing-semi-warning nil)
 
 (defun cumacs-javascript-hook()
   (js2r-add-keybindings-with-prefix "C-c r")
@@ -31,10 +33,12 @@
 (defun cumacs-json-hook ()
   (flycheck-mode t)
   (hs-minor-mode t)
-  (yas-minor-mode t)
-  (smartparens-mode t))
+  (yas-minor-mode t))
 
 (add-hook 'json-mode-hook 'cumacs-json-hook)
+
+(eval-after-load 'js2-mode
+	   '(add-hook 'js2-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
 
 (major-mode-hydra-define js2-mode (:quit-key "q" :color pink :exit t)
   ("   Nodejs   "
@@ -45,7 +49,5 @@
    "   代码   "
    (("v" tide-refactor "TIDE重构"))   
    ))
-
-
 
 (provide 'cumacs-lang-javascript)
