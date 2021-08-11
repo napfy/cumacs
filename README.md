@@ -7,6 +7,9 @@ A out of box emacs config for Chinese developer.
 Emacs作为一款知名的“编辑器”，因为它的上手难度太高，并未被许多开发者使用。
 作为一个长期使用Emacs的开发者，我并不建议所有人都放弃现有的开发工具转而学习和使用Emacs。但我想说，如果你长期使用计算机编写代码，你期待高效率的工作，你期待更高的掌控力和自由度，我向你推荐它。
 
+## 最新改进
+    支持Emacs27
+
 ## 目标
 - 持续改善使用体验 
 主要包括对基础操作，界面，交互性等方面的改进
@@ -20,9 +23,8 @@ cumacs使用了简单的目录结构来划分不同配置的功能定位，这�
 - base目录 基础配置
 - dev目录 与开发相关的配置
 - os目录 操作系统相关设置
-- fonts目录 开源字体包
 - snippets目录 自定义的yasnippets
-- elisp目录 放置不在package网络中的第三方elisp程序
+- elisp目录 放置不在官方package中的第三方elisp程序
 
 ## 有任何问题、建议和想法？
 请发邮件到yue.f#qq.com，欢迎提出好的问题想法或批评指导
@@ -74,7 +76,6 @@ cumacs整合了许多成熟的package，以下是当前所使用的一些package
 - js2-mode
 - js2-refactor
 - cargo
-- racer
 - flycheck-rust
 - tide
 - restclient

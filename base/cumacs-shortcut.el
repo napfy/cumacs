@@ -45,5 +45,4 @@
 
 (global-set-key (kbd "M-`") 'cumacs-shortcut/body)
 
-
 (provide 'cumacs-shortcut)
