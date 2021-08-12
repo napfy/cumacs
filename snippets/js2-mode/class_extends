@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: class extends 
+# key: ext
+# --
+class ${1:$$(capitalize yas-text)} extends ${2:$$(capitalize yas-text)} {
+    $0
+}

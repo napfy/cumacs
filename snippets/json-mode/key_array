@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: key: [ ... ]
+# key: ka
+# --
+"$1": [
+  $0
+],

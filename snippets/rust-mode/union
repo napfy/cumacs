@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: union { ... }
+# key: uni
+# --
+union ${1:$$(capitalize yas-text)} {
+   $0
+}

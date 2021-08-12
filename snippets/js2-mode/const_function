@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: const function
+# key: confunc
+# --
+const $1 = function ($2) {
+  $0
+}

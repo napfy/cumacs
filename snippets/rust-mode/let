@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
 # name: let
-# key: let
+# key: le
 # --
-let $1: $2 = $0;
+let $1 = $0;

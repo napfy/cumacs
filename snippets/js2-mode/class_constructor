@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: class & constructor
+# key: classc
+# --
+class ${1:$$(capitalize yas-text)} {
+  constructor($2) {
+    $0
+  }
+}

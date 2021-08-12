@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: let mut ...
-# key: lm
-# --
-let mut $1 = $2;

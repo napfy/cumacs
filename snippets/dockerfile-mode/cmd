@@ -1,5 +1,6 @@
 # -*- mode: snippet -*-
 # name: CMD
 # key: cm
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))      
 # --
 CMD [ "$0" ]

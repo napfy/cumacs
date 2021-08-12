@@ -1,0 +1,6 @@
+#contributor : napfy@yahoo.com
+#name : meta viewport
+#key : meta
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+<meta name="viewport" content="width=device-width, initial-scale=1">

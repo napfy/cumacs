@@ -1,6 +1,0 @@
-# contributor :  yue.f@yahoo.cn
-# name : text (name value)
-# key : text
-# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
-# --
-<input type="text" name="$1" value="$2" />

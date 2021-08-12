@@ -1,6 +1,0 @@
-# contributor :  yue.f@yahoo.cn
-# name : radio (name value)
-# key : radio
-# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
-# --
-<input type="radio" name="$1" value="$2" />

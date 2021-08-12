@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: fn void
+# name: fn () { ... }
 # key: fn
 # --
-fn $1 ($2)  {
+fn $1($2) {
    $0
 }

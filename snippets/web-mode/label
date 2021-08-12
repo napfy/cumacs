@@ -1,6 +1,0 @@
-#contributor:  yue.f@yahoo.cn
-#name: label class for ...
-#key: label
-# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
-# --
-<label class="$1" for="$2">$0</label>

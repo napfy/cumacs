@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: const class {...}
+# key: conclass
+# --
+const ${1:$$(capitalize yas-text)} = class ${2:$$(capitalize yas-text)} {
+  $0
+}

@@ -1,5 +1,6 @@
 # -*- mode: snippet -*-
 # name: WORKDIR
 # key: wd
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))      
 # --
 WORKDIR $0

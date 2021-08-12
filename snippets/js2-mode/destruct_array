@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: const [ ? ] = array
+# key: dar
+# --
+const [ $2 ] = $1

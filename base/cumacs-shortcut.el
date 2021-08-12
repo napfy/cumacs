@@ -44,5 +44,6 @@
    ))
 
 (global-set-key (kbd "M-`") 'cumacs-shortcut/body)
+(global-set-key (kbd "<f7>") 'cumacs-shortcut/body)
 
 (provide 'cumacs-shortcut)

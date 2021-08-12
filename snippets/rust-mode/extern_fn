@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pub extern fn { ... }
+# key: extf
+# --
+pub extern fn $1($2) -> $3 {
+    $0
+}

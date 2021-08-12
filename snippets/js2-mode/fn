@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: fn(()=> {})
-# key: fn
-# --
-${map}((${params}) => {
-    $0
-});

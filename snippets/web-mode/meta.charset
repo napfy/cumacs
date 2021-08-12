@@ -1,6 +1,6 @@
 #contributor : napfy@yahoo.com
 #name : meta charset
-#key : met
+#key : meta
 # expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
 # --
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />$0
+<meta charset="utf-8"/>

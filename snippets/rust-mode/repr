@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: #[repr ... ]
+# key: repr
+# --
+#[repr($0)]

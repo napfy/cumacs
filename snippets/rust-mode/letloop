@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: let loop { ... }
+# key: letl
+# --
+let $1 = loop {
+  $0
+  break ${2:val}
+};

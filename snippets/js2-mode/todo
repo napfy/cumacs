@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: // annotation: comment
+# key: todo
+# --
+// TODO: $0

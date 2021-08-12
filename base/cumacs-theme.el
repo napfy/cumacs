@@ -1,8 +1,8 @@
 (global-hl-line-mode t)
 
-;;(set-face-font 'default (font-spec :family "JetBrains Mono" :size 16))
-;;(set-fontset-font t 'han (font-spec :family "SourceHanSerifSC" :size 16))
-
+;;(set-face-font 'default (font-spec :family "Fira Code" :size 13))
+(set-face-font 'default (font-spec :family "JetBrains Mono" :size 16))
+(set-fontset-font t 'han (font-spec :family "SourceHanSerifSC" :size 16))
 
 (defalias 'set-face 'set-face-attribute)
 (set-cursor-color "azure1")

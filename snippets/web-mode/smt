@@ -1,4 +1,4 @@
-# contributor : yuef@yahoo.cn
+# -*- mode: snippet -*-
 # name : <!--{ }-->
 # key : smt
 # expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: struct inline (...)
+# key: stt
+# --
+struct ${1:$$(capitalize yas-text)}($0);

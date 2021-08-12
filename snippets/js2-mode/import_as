@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: import { ? as ? } from ...
+# key: impa
+# --
+import { $2 as $3 } from '$1'$0

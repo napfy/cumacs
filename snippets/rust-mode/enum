@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
-# name: enum
+# name: enum Type { ... }
 # key: enum
 # --
 enum ${1:$$(capitalize yas-text)} {
-  $0,
+  $0
 }

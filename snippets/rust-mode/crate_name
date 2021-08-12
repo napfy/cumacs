@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: #![crate_name =  ... ]
+# key: craten
+# --
+#![crate_name = "$0"]

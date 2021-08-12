@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: const ... function* 
+# key: gen
+# --
+const $1 = function* ($2) {
+  $0
+}

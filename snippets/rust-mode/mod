@@ -2,6 +2,6 @@
 # name: mod {...}
 # key: mod
 # --
-mod ${1:$$(capitalize yas-text)} {
+mod $1 {
   $0
 }
